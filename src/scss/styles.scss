@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
+h1 {
+  color: red;
+  @include responsive('iphone') {
+    color: yellow;
+  }
+  @include responsive('ipad') {
+    font-size: 60px;
+  }
+  @include responsive('tablet') {
+    color: green;
+  }
+}
